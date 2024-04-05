@@ -8,10 +8,11 @@ sr = speech_recognition.Recognizer()
 commands_dict = {
     'commands':{
             'greeting': ['привет', 'добрый день', 'здравствуйте'],
-            'play_music' : ['включи музыку', 'включи песню', 'включи трек'],
-            'create_task' : ['добавь задание', 'добавь задачу'],
+            'play_music': ['включи музыку', 'включи песню', 'включи трек'],
+            'create_task': ['добавь задание', 'добавь задачу'],
         }
 }
+
 
 def greeting():
     return "Здравствуйте. Я ваш голосовой помощник."
@@ -35,12 +36,6 @@ def play_music():
     playsound(random_file)
     return 0
 
-def find_out_the_weather():
-    files = os.listdir('music')
-    random_file = f'music/{random.choice(files)}'
-    print(f'Включаю {random_file.split("/")[-1]}')
-    playsound(random_file)
-    return 0
 
 def create_task():
     print("Скажите, что мне добавить в список дел.")
@@ -59,7 +54,6 @@ def main():
     for a, b in commands_dict['commands'].items():
         if query in b:
             print(globals()[a]())
-
 
 
 if __name__ == '__main__':
