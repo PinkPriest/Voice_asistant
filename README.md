@@ -1,10 +1,12 @@
 # Voice Assistant
 
+Версия Python - **Python 3.9**
+
 Используемые модули:
 * [os](https://docs.python.org/3/library/os.html)
-* [playsound](https://pypi.org/project/playsound/)
+* [playsound 1.3.0](https://pypi.org/project/playsound/)
 * [random](https://docs.python.org/3/library/random.html)
-* [speech_recognition](https://pypi.org/project/SpeechRecognition/)
+* [speech_recognition 3.10.1](https://pypi.org/project/SpeechRecognition/)
 
 
 Учебные материалы:
